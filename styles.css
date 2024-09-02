@@ -1,0 +1,22 @@
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* This ensures that only one set of 5 items is shown at a time */
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
